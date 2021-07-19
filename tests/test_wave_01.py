@@ -128,14 +128,15 @@ def test_watch_movie_moves_movie_from_watchlist_to_watched():
         "genre": "Fantasy",
         "rating": 4.8
     }
+    movie_to_watch2 = {
+        "title": "Title B",
+        "genre": "Action",
+        "rating": 2.0
+    }
     janes_data = {
-        "watchlist": [
-            {
-                "title": "Title B",
-                "genre": "Action",
-                "rating": 2.0
-            },
-            movie_to_watch
+        "watchlist": [ 
+            movie_to_watch,
+            movie_to_watch2
         ],
         "watched": [
             {
