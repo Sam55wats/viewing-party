@@ -9,7 +9,13 @@ def create_movie(title, genre, rating):
         
     return None
 
-def add_to_watched(user_data,movie):
-    if length.watched = 0:
-        watched.append(movie)
-        return user_data
+def add_to_watched(user_data, movie):
+    watched.append(movie)
+    return user_data
+
+def add_to_watchlist(user_data, movie)
+    watchlist.append(movie)
+    return user_data
+
+def watch_movie(user_data, title)
+    
