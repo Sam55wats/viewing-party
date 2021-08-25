@@ -24,3 +24,13 @@ def watch_movie(user_data, title):
             user_data['watched'].append(movie)
        
     return user_data
+
+def get_watched_avg_rating(user_data):
+    if len(user_data['watched']) == 0:
+        return 0.0
+
+    sum_ratings = 0
+    for movie in user_data['watched']:
+        sum_ratings += movie['rating'] # sum_ratings = sum_ratings + movie['rating']
+
+    return sum_ratings / len(user_data['watched'])
